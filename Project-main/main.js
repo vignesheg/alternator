@@ -24,80 +24,101 @@
 
 const db = getDatabase(app);
 
-onValue(ref(db,"Current_Mode"),(snapshot)=>{
+onValue(ref(db,"Current_Mode:"),(snapshot)=>{
     let data = snapshot.val();
-  console.log(data);
+    document.getElementById("cm").innerHTML= "current mode "+data;
 })
 
 onValue(ref(db,"Relay1"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("r1").innerHTML= "relay 1 "+data;
 })
 
 onValue(ref(db,"Relay2"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("r2").innerHTML= "relay 2 "+data;
 })
 
 onValue(ref(db,"Relay3"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("r3").innerHTML= "relay 3 "+data;
 })
 onValue(ref(db,"Relay_Alternator:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("ra").innerHTML= "relay alternator "+data;
 })
 onValue(ref(db,"Relay_Battery:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("rb").innerHTML= "relay battery "+data;
 })
 onValue(ref(db,"Relay_Inverter:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("ri").innerHTML= "relay inverter "+data;
 })
 onValue(ref(db,"Relay_Mode:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("rm").innerHTML= "relay mode "+data;
 })
 onValue(ref(db,"Status_Mode:000"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm000").innerHTML= "Status_Mode:000 "+data;
 })
 onValue(ref(db,"Status_Mode:001"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm001").innerHTML= "Status_Mode:001 "+data;
 })
 onValue(ref(db,"Status_Mode:010"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm010").innerHTML= "Status_Mode:010 "+data;
 })
 onValue(ref(db,"Status_Mode:011"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm011").innerHTML= "Status_Mode:011 "+data;
 })
 onValue(ref(db,"Status_Mode:100"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm100").innerHTML= "Status_Mode:100 "+data;
 })
 
 onValue(ref(db,"Status_Mode:101"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm101").innerHTML= "Status_Mode:101 "+data;
 })
 
 onValue(ref(db,"Status_Mode:110"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm110").innerHTML= "Status_Mode:110 "+data;
 })
 
 onValue(ref(db,"Status_Mode:111"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("sm111").innerHTML= "Status_Mode:111 "+data;
 })
 
 onValue(ref(db,"Voltage_Sensor:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
+    document.getElementById("vs").innerHTML= "Voltage_Sensor: "+data;
+})
+onValue(ref(db,"wifi-status"),(snapshot)=>{
+    let data = snapshot.val();
+    console.log(data);
+    document.getElementById("wifi").innerHTML= "wifi-status: "+data;
 })
 
 
