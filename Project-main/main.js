@@ -100,3 +100,58 @@ onValue(ref(db,"Voltage_Sensor:"),(snapshot)=>{
     console.log(data);
 })
 
+
+
+    $(document).ready(function() {
+        $("#logButton").click(function() {
+            var selectedOption = $("#options").val();
+            if (selectedOption === "option1") {
+                window.open('https://www.google.com/maps/dir/Current+Location/11.27243603928532, 77.60834786431992', '_blank');
+            } else if (selectedOption === "option2") {
+                window.open('https://www.google.com/maps/dir/Current+Location/11.265609720672957, 77.59511806527308', '_blank');
+            } else if (selectedOption === "option3") {
+                window.open('https://www.google.com/maps/dir/Current+Location/11.244754761760385, 77.57797507642324', '_blank');
+            }else if (selectedOption === "option4") {
+                window.open('https://www.google.com/maps/dir/Current+Location/11.266355784528148, 77.58970023993389', '_blank');
+            }
+            else if (selectedOption === "option5") {
+                window.open('https://www.google.com/maps/dir/Current+Location/11.27158918988406, 77.57261139329988', '_blank');
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        var map = L.map('map', {
+            center: [0, 0], // Initial map center
+            zoom: 15, // Initial zoom level
+            zoomControl: true // Enable zoom controls
+        });
+        // Add the OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        
+        
+        // Define the main location coordinates and create a marker
+        var mainLocation = L.marker([11.27424741970588, 77.60811097992051]).addTo(map);
+        mainLocation.bindPopup("<b>Main Location</b>").openPopup();
+    
+        // Define static locations with coordinates and create markers
+        var staticLocations = [
+            { name: "Location 1", coordinates: [11.27243603928532, 77.60834786431992] },
+            { name: "Location 2", coordinates: [11.265609720672957, 77.59511806527308] },
+            { name: "Location 3", coordinates: [11.244754761760385, 77.57797507642324] },
+            { name: "Location 4", coordinates: [11.266355784528148, 77.58970023993389] },
+            { name: "Location 5", coordinates: [11.27158918988406, 77.57261139329988] }
+        ];
+    
+        staticLocations.forEach(location => {
+            var marker = L.marker(location.coordinates).addTo(map);
+            marker.bindPopup(`<b>${location.name}</b><br>Coordinates: ${location.coordinates}`).on('mouseover', function() {
+                this.openPopup();
+            }).on('mouseout', function() {
+                this.closePopup();
+            });
+        });
+    });
