@@ -14,13 +14,11 @@
     font-family: sans-serif;
     background: white;
     padding: 12px 0;
-    color: black;
     font-size: 13px;
 }
 .table-head{
     background: yellow;
     box-shadow: none;
-    color: white;
     font-weight: 600;
 }
 .table-head .table-cell{
