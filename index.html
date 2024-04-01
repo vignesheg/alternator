@@ -149,10 +149,10 @@
                                 <div class="table">
 
                                     <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                        <li><a href="#tab1">Wifi_Status</a></li>
-                                        <li><a href="#tab4">Current_Mode</a></li>
-                                        <li><a href="#tab2">Battery_Status</a></li>
-                                        <li><a href="#tab3">Relay_Mode</a></li>
+                                        <li><a href="#tab1">Wifi_Status</a><div id="wifi"></div></li>
+                                        <li><a href="#tab4">Current_Mode</a><div id="cm"></div></li>
+                                        <li><a href="#tab2">Battery_Status</a><div id="vs"></div></li>
+                                        <li><a href="#tab3">Relay_Mode</a><div id="r1"></div><div id="r2"></div><div id="r3"></div></li>
 
                                     </ul>
                                 </div>
@@ -169,6 +169,177 @@
 
                     <div class="col-md-8">
                         <section id="first-tab-group" class="tabgroup">
+                            <had><title>Responsive Table Design - Easy Tutorials</title>
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <link rel="stylesheet" href="style.css">
+                            </had>
+                            <div class="table-box">
+                                    <div class="table-row table-head">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p>MODE_NAME</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>RELAY_(1)</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>RELAY_(2)</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>RELAY_(3)</p>
+                                        </div>
+ 
+                                    </div>
+                            
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(000)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm000"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+                            
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(001)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm001"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(010)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm010"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(011)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm011"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(100)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm100"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+                            
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(101)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm101"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(110)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm110"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="table-row">
+                                        <div class="table-cell first-cell">
+                                            <p>MODE(111)</p>
+                                        </div>
+                                        <div class="table-cell first-cell">
+                                            <p><div id="sm111"></div></p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="table-cell">
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                            </div>   
                             <div id="tab1">
                                 <img src="img/1.gif" alt="">
                                 <div class="text-content">
@@ -235,26 +406,7 @@
                                 <option value="option5" style="color: black;">JJ Nagar</option>
                             </select><br><br>
                             <button id="logButton" class="track-bt"><b>Find Path</b></button>
-                            <div style="background-color: rgb(255, 255, 255);">
-                                <div id="cm"></div>
-                                <div id="r1"></div>
-                                <div id="r2"></div>
-                                <div id="r3"></div>
-                                <div id="ra"></div>
-                                <div id="rb"></div>
-                                <div id="ri"></div>
-                                <div id="rm"></div>
-                                <div id="sm000"></div>
-                                <div id="sm001"></div>
-                                <div id="sm010"></div>
-                                <div id="sm011"></div>
-                                <div id="sm100"></div>
-                                <div id="sm101"></div>
-                                <div id="sm110"></div>
-                                <div id="sm111"></div>
-                                <div id="vs"></div>
-                                <div id="wifi"></div>
-                                </div>
+                            
                         </div>
                     </div>
                 </div>
