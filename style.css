@@ -12,13 +12,13 @@
     width: 80%;
     margin: 10px auto;
     font-family: sans-serif;
-    background: black;
+    background: white;
     padding: 12px 0;
     color: black;
     font-size: 13px;
 }
 .table-head{
-    background: blue;
+    background: yellow;
     box-shadow: none;
     color: white;
     font-weight: 600;
