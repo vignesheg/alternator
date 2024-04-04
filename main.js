@@ -64,7 +64,7 @@ onValue(ref(db,"Relay_Inverter:"),(snapshot)=>{
 onValue(ref(db,"Relay_Mode:"),(snapshot)=>{
     let data = snapshot.val();
     console.log(data);
-    document.getElementById("rm").innerHTML= "relay mode "+data;
+    document.getElementById("rm").innerHTML= +data;
 })
 onValue(ref(db,"Status_Mode:000"),(snapshot)=>{
     let data = snapshot.val();
