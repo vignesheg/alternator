@@ -127,7 +127,7 @@ onValue(ref(db,"wifi-status"),(snapshot)=>{
         $("#logButton").click(function() {
             var selectedOption = $("#options").val();
             if (selectedOption === "option1") {
-                window.open('https://www.google.com/maps/dir/Current+Location/11.27243603928532, 77.60834786431992', '_blank');
+                window.open('https://maps.app.goo.gl/xrEJjDJVq6Q2YtLd7', '_blank');
             } else if (selectedOption === "option2") {
                 window.open('https://www.google.com/maps/dir/Current+Location/11.265609720672957, 77.59511806527308', '_blank');
             } else if (selectedOption === "option3") {
