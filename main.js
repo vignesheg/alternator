@@ -129,9 +129,9 @@ onValue(ref(db,"wifi-status"),(snapshot)=>{
             if (selectedOption === "option1") {
                 window.open('https://maps.app.goo.gl/xrEJjDJVq6Q2YtLd7', '_blank');
             } else if (selectedOption === "option2") {
-                window.open('https://www.google.com/maps/dir/Current+Location/11.265609720672957, 77.59511806527308', '_blank');
+                window.open('https://maps.app.goo.gl/oiUJPYCwdscfYLnz5', '_blank');
             } else if (selectedOption === "option3") {
-                window.open('https://www.google.com/maps/dir/Current+Location/11.244754761760385, 77.57797507642324', '_blank');
+                window.open('https://maps.app.goo.gl/4p7xrmMM4bcPadX97', '_blank');
             }else if (selectedOption === "option4") {
                 window.open('https://www.google.com/maps/dir/Current+Location/11.266355784528148, 77.58970023993389', '_blank');
             }
