@@ -160,7 +160,7 @@ onValue(ref(db,"wifi-status"),(snapshot)=>{
     
         // Define static locations with coordinates and create markers
         var staticLocations = [
-            { name: "Location 1", coordinates: [11.27243603928532, 77.60834786431992] },
+            { name: "Location 1", coordinates: [11.302545726302762, 77.60083508466376] },
             { name: "Location 2", coordinates: [11.265609720672957, 77.59511806527308] },
             { name: "Location 3", coordinates: [11.244754761760385, 77.57797507642324] },
             { name: "Location 4", coordinates: [11.266355784528148, 77.58970023993389] },
